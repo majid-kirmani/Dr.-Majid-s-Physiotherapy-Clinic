@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Book an appointment at Dr. Majid's Physiotherapy and Weight Loss Clinic. Online booking available for physiotherapy and weight loss consultations.">
+  <title>Book Appointment - Dr. Majid's Physiotherapy and Weight Loss Clinic</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/booking.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;600;700&display=swap">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <!-- Header -->
+  <header id="header">
+    <div class="container">
+      <div class="logo">
+        <a href="index.html">
+          <h1>Dr. Majid's Clinic</h1>
+        </a>
+      </div>
+      <nav>
+        <div class="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="weight-loss.html">Weight Loss</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="booking.html" class="active btn-primary">Book Now</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Banner -->
+  <section id="page-banner" class="booking-banner">
+    <div class="container">
+      <h1>Book an Appointment</h1>
+      <p>Schedule your visit with our specialists</p>
+    </div>
+  </section>
+
+  <!-- Booking Information -->
+  <section id="booking-info" class="section">
+    <div class="container">
+      <div class="booking-grid">
+        <div class="booking-content">
+          <h2>Appointment Information</h2>
+          <p>Thank you for choosing Dr. Majid's Physiotherapy and Weight Loss Clinic. Please note the following information when booking your appointment:</p>
+          <ul>
+            <li>Initial consultations typically last 45-60 minutes</li>
+            <li>Follow-up sessions are usually 30-45 minutes</li>
+            <li>Please arrive 15 minutes before your scheduled appointment time</li>
+            <li>Bring any relevant medical reports or imaging results</li>
+            <li>Wear comfortable clothing that allows easy access to the area requiring treatment</li>
+            <li>Please provide at least 24 hours notice for cancellations</li>
+          </ul>
+          <div class="emergency-notice">
+            <h3>Emergency Appointments</h3>
+            <p>For urgent cases, please call our clinic directly at <strong>+91-XXXXXXXXXX</strong>.</p>
+          </div>
+        </div>
+        <div class="booking-image">
+          <img src="images/GuruHospital.webp" alt="Doctor consultation" class="img-fluid rounded">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking Form -->
+  <section id="booking-form" class="section bg-light">
+    <div class="container">
+      <div class="section-header">
+        <h2>Online Booking</h2>
+        <p>Fill in the form below to schedule your appointment</p>
+      </div>
+      <div class="form-container">
+        <form id="appointmentForm" class="booking-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fullName">Full Name *</label>
+              <input type="text" id="fullName" name="fullName" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="phone">Phone Number *</label>
+              <input type="tel" id="phone" name="phone" required>
+            </div>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email">
+            </div>
+            
+            <div class="form-group">
+              <label for="age">Age *</label>
+              <input type="number" id="age" name="age" min="1" max="120" required>
+            </div>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label for="serviceType">Service Type *</label>
+              <select id="serviceType" name="serviceType" required>
+                <option value="">Select a service</option>
+                <option value="physiotherapy-consultation">Physiotherapy Consultation</option>
+                <option value="electrotherapy">Electrotherapy</option>
+                <option value="manual-therapy">Manual Therapy</option>
+                <option value="weight-loss-consultation">Weight Loss Consultation</option>
+                <option value="rehabilitation">Rehabilitation</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="preferredDate">Preferred Date *</label>
+              <input type="date" id="preferredDate" name="preferredDate" required>
+            </div>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label for="preferredTime">Preferred Time *</label>
+              <select id="preferredTime" name="preferredTime" required>
+                <option value="">Select a time</option>
+                <option value="9:00 AM">9:00 AM</option>
+                <option value="10:00 AM">10:00 AM</option>
+                <option value="11:00 AM">11:00 AM</option>
+                <option value="12:00 PM">12:00 PM</option>
+                <option value="1:00 PM">1:00 PM</option>
+                <option value="2:00 PM">2:00 PM</option>
+                <option value="3:00 PM">3:00 PM</option>
+                <option value="4:00 PM">4:00 PM</option>
+                <option value="5:00 PM">5:00 PM</option>
+                <option value="6:00 PM">6:00 PM</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="alternateDate">Alternate Date</label>
+              <input type="date" id="alternateDate" name="alternateDate">
+            </div>
+          </div>
+          
+          <div class="form-group full-width">
+            <label for="healthConcern">Health Concern / Reason for Visit *</label>
+            <textarea id="healthConcern" name="healthConcern" rows="4" required></textarea>
+          </div>
+          
+          <div class="form-group full-width">
+            <label for="previousTreatment">Previous Treatments (if any)</label>
+            <textarea id="previousTreatment" name="previousTreatment" rows="2"></textarea>
+          </div>
+          
+          <div class="form-group full-width checkbox-group">
+            <input type="checkbox" id="firstVisit" name="firstVisit">
+            <label for="firstVisit">This is my first visit to the clinic</label>
+          </div>
+          
+          <div class="form-group full-width checkbox-group">
+            <input type="checkbox" id="termsAgree" name="termsAgree" required>
+            <label for="termsAgree">I agree to the cancellation policy and terms of service *</label>
+          </div>
+          
+          <div class="form-group full-width">
+            <button type="submit" class="btn-primary">Book Appointment</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>What Our Patients Say</h2>
+        <p>Testimonials from satisfied patients</p>
+      </div>
+      <div class="testimonial-slider">
+        <div class="testimonial-container">
+          <div class="testimonial active">
+            <div class="testimonial-content">
+              <p>"I was under the treatment of Dr. Shazia and I couldn't be happier with the results. The personalized approach made all the difference!"</p>
+            </div>
+            <div class="testimonial-author">
+              <div class="avatar">
+                <img src="images/Shoiab.jpg" alt="Patient" class="img-fluid">
+              </div>
+              <div class="author-info">
+                <h4>Muhammad Shoaib</h4>
+                <p>Physiotherapy Patient</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial">
+            <div class="testimonial-content">
+              <p>"Dr. Majid is very punctual with appointments. The Physiotherapy program has been life-changing for me"</p>
+            </div>
+            <div class="testimonial-author">
+              <div class="avatar">
+                <img src="images/NOphoto.png" alt="Patient" class="img-fluid">
+              </div>
+              <div class="author-info">
+                <h4>Sameena</h4>
+                <p>Physiotherapy Patient</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial">
+            <div class="testimonial-content">
+              <p>"The staff is very accommodating and the treatment quality is consistently excellent."</p>
+            </div>
+            <div class="testimonial-author">
+              <div class="avatar">
+                <img src="images/imtiyaz.png" alt="Patient" class="img-fluid">
+              </div>
+              <div class="author-info">
+                <h4>Imtiyaz Qadri</h4>
+                <p>Regular Patient</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-controls">
+          <span class="testimonial-dot active"></span>
+          <span class="testimonial-dot"></span>
+          <span class="testimonial-dot"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- Footer -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h3>Dr. Majid's Clinic</h3>
+          <p>Providing expert physiotherapy and weight loss services since 2000.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="weight-loss.html">Weight Loss</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <p><strong>Address:</strong> Guru Hospital, New Colony Sopore (193201)</p>
+          <p><strong>Phone:</strong> 01954222146</p>
+          <p><strong>Email:</strong> majidkirmani@gamil.com</p>
+        </div>
+        <div class="footer-hours">
+          <h4>Clinic Hours</h4>
+          <p><strong>Mon-Sunday:</strong> 9:00 AM - 7:00 PM</p>
+          <p><strong>Friday:</strong> Closed</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Dr. Majid's Physiotherapy and Weight Loss Clinic. All Rights Reserved.</p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/guruhospitalsoporekashmir/" class="social-icon">
+            <img src="images/facebook.svg" alt="Facebook">
+          </a>
+          <a href="error.html" class="social-icon">
+            <img src="images/instagram.svg" alt="Instagram">
+          </a>
+          <a href="error.html" class="social-icon">
+            <img src="images/twitter.svg" alt="Twitter">
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/booking.js"></script>
+  <script src="js/testimonials.js"></script>
+</body>
+</html>

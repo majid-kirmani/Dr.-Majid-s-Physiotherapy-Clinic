@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Yet to be updated
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Coming Soon</title>
+            <style>
+                body {
+                    font-family: 'Arial', sans-serif;
+                    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+                    margin: 0;
+                    height: 100vh;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: #333;
+                    overflow: hidden;
+                }
+                
+                .container {
+                    text-align: center;
+                    padding: 2rem;
+                    background: rgba(255, 255, 255, 0.9);
+                    border-radius: 10px;
+                    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+                    max-width: 600px;
+                    animation: fadeIn 1s ease-in-out;
+                }
+                
+                h1 {
+                    font-size: 2.5rem;
+                    margin-bottom: 1rem;
+                    color: #2c3e50;
+                }
+                
+                p {
+                    font-size: 1.2rem;
+                    margin-bottom: 2rem;
+                    color: #7f8c8d;
+                }
+                
+                .loader {
+                    width: 100px;
+                    height: 100px;
+                    border: 5px solid #f3f3f3;
+                    border-top: 5px solid #3498db;
+                    border-radius: 50%;
+                    margin: 0 auto;
+                    animation: spin 2s linear infinite;
+                }
+                
+                .bubble {
+                    position: absolute;
+                    background: rgba(255, 255, 255, 0.3);
+                    border-radius: 50%;
+                    animation: float 6s ease-in-out infinite;
+                }
+                
+                @keyframes spin {
+                    0% { transform: rotate(0deg); }
+                    100% { transform: rotate(360deg); }
+                }
+                
+                @keyframes fadeIn {
+                    from { opacity: 0; transform: translateY(-20px); }
+                    to { opacity: 1; transform: translateY(0); }
+                }
+                
+                @keyframes float {
+                    0%, 100% { transform: translateY(0) translateX(0); }
+                    50% { transform: translateY(-20px) translateX(20px); }
+                }
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <h1>We're Working On It!</h1>
+                <p>This page will be updated soon. Please check back later.</p>
+                <div class="loader"></div>
+            </div>
+            
+            <script>
+                // Create floating bubbles
+                for (let i = 0; i < 20; i++) {
+                    const bubble = document.createElement('div');
+                    bubble.className = 'bubble';
+                    const size = Math.random() * 50 + 10;
+                    bubble.style.width = `${size}px`;
+                    bubble.style.height = `${size}px`;
+                    bubble.style.left = `${Math.random() * 100}vw`;
+                    bubble.style.top = `${Math.random() * 100}vh`;
+                    bubble.style.animationDuration = `${Math.random() * 8 + 4}s`;
+                    bubble.style.animationDelay = `${Math.random() * 2}s`;
+                    document.body.appendChild(bubble);
+                }
+            </script>
+        </body></div>
+    </h1>
+</body>
+</html>

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Photo gallery of Dr. Majid's Physiotherapy and Weight Loss Clinic featuring our facility, equipment, and patient success stories">
+  <title>Gallery - Dr. Majid's Physiotherapy and Weight Loss Clinic</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/gallery.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;600;700&display=swap">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <!-- Header -->
+  <header id="header">
+    <div class="container">
+      <div class="logo">
+        <a href="index.html">
+          <h1>Dr. Majid's<span>Clinic</span></h1>
+        </a>
+      </div>
+      <nav>
+        <div class="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="weight-loss.html">Weight Loss</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html" class="active">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="booking.html" class="btn-primary">Book Now</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Banner -->
+  <section id="page-banner" class="gallery-banner">
+    <div class="container">
+      <h1>Our Gallery</h1>
+      <p>Take a visual tour of our clinic and services</p>
+    </div>
+  </section>
+
+  <!-- Gallery Filter -->
+  <section id="gallery-filter" class="section">
+    <div class="container">
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="clinic">Clinic</button>
+        <button class="filter-btn" data-filter="equipment">Equipment</button>
+        <button class="filter-btn" data-filter="treatment">Treatments</button>
+        <button class="filter-btn" data-filter="success">Success Stories</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Grid -->
+  <section id="gallery-grid" class="section">
+    <div class="container">
+      <div class="gallery">
+        <div class="gallery-item" data-category="clinic">
+          <div class="gallery-image">
+            <img src="https://images.pexels.com/photos/1692693/pexels-photo-1692693.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Clinic reception" class="img-fluid">
+            <div class="gallery-overlay">
+              <div class="gallery-info">
+                <h3>Modern Reception</h3>
+                <p>Our welcoming reception area</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="gallery-item" data-category="equipment">
+          <div class="gallery-image">
+            <img src="https://images.pexels.com/photos/3768913/pexels-photo-3768913.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Physiotherapy equipment" class="img-fluid">
+            <div class="gallery-overlay">
+              <div class="gallery-info">
+                <h3>Advanced Equipment</h3>
+                <p>State-of-the-art physiotherapy machines</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="gallery-item" data-category="treatment">
+          <div class="gallery-image">
+            <img src="https://images.pexels.com/photos/3760607/pexels-photo-3760607.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Manual therapy session" class="img-fluid">
+            <div class="gallery-overlay">
+              <div class="gallery-info">
+                <h3>Manual Therapy</h3>
+                <p>Hands-on treatment techniques</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="gallery-item" data-category="clinic">
+          <div class="gallery-image">
+            <img src="https://images.pexels.com/photos/3938023/pexels-photo-3938023.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Treatment room" class="img-fluid">
+            <div class="gallery-overlay">
+              <div class="gallery-info">
+                <h3>Private Treatment Room</h3>
+                <p>Comfortable and private space for therapy</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="gallery-item" data-category="equipment">
+          <div class="gallery-image">
+            <img src="https://images.pexels.com/photos/4506171/pexels-photo-4506171.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Electrotherapy equipment" class="img-fluid">
+            <div class="gallery-overlay">
+              <div class="gallery-info">
+                <h3>Electrotherapy Units</h3>
+                <p>Advanced pain management technology</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="gallery-item" data-category="treatment">
+          <div class="gallery-image">
+            <img src="https://images.pexels.com/photos/3764011/pexels-photo-3764011.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Exercise therapy" class="img-fluid">
+            <div class="gallery-overlay">
+              <div class="gallery-info">
+                <h3>Exercise Therapy</h3>
+                <p>Guided therapeutic exercises</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="gallery-item" data-category="success">
+          <div class="gallery-image">
+            <img src="https://images.pexels.com/photos/7991569/pexels-photo-7991569.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Weight loss success" class="img-fluid">
+            <div class="gallery-overlay">
+              <div class="gallery-info">
+                <h3>Weight Loss Success</h3>
+                <p>Patient after completing our program</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="gallery-item" data-category="clinic">
+          <div class="gallery-image">
+            <img src="https://images.pexels.com/photos/4506077/pexels-photo-4506077.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Waiting area" class="img-fluid">
+            <div class="gallery-overlay">
+              <div class="gallery-info">
+                <h3>Comfortable Waiting Area</h3>
+                <p>Relaxing space for patients and visitors</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="gallery-item" data-category="equipment">
+          <div class="gallery-image">
+            <img src="https://images.pexels.com/photos/4498574/pexels-photo-4498574.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Exercise equipment" class="img-fluid">
+            <div class="gallery-overlay">
+              <div class="gallery-info">
+                <h3>Exercise Equipment</h3>
+                <p>Tools for rehabilitation and fitness</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="gallery-item" data-category="treatment">
+          <div class="gallery-image">
+            <img src="https://images.pexels.com/photos/7089396/pexels-photo-7089396.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Electrotherapy session" class="img-fluid">
+            <div class="gallery-overlay">
+              <div class="gallery-info">
+                <h3>Electrotherapy Session</h3>
+                <p>Advanced pain management treatment</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="gallery-item" data-category="success">
+          <div class="gallery-image">
+            <img src="https://images.pexels.com/photos/38630/bodybuilder-weight-training-stress-38630.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Rehabilitation success" class="img-fluid">
+            <div class="gallery-overlay">
+              <div class="gallery-info">
+                <h3>Rehabilitation Success</h3>
+                <p>Patient regaining strength after injury</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="gallery-item" data-category="clinic">
+          <div class="gallery-image">
+            <img src="https://images.pexels.com/photos/3951790/pexels-photo-3951790.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Clinic exterior" class="img-fluid">
+            <div class="gallery-overlay">
+              <div class="gallery-info">
+                <h3>Clinic Exterior</h3>
+                <p>Our modern facility in North Kashmir</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Tour -->
+  <section id="video-tour" class="section bg-light">
+    <div class="container">
+      <div class="section-header">
+        <h2>Video Tour</h2>
+        <p>Take a virtual tour of our facility</p>
+      </div>
+      <div class="video-container">
+        <div class="video-placeholder">
+          <img src="https://images.pexels.com/photos/3846009/pexels-photo-3846009.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Clinic interior" class="img-fluid">
+          <div class="play-button">
+            <span>▶</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section id="cta" class="section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>See Our Facility in Person</h2>
+        <p>Schedule a tour or book your appointment today.</p>
+        <a href="booking.html" class="btn-primary">Book Your Appointment</a>
+      </div>
+    </div>
+  </section>
+
+    <!-- Footer -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h3>Dr. Majid's Clinic</h3>
+          <p>Providing expert physiotherapy and weight loss services since 2000.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="weight-loss.html">Weight Loss</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <p><strong>Address:</strong> Guru Hospital, New Colony Sopore (193201)</p>
+          <p><strong>Phone:</strong> 01954222146</p>
+          <p><strong>Email:</strong> majidkirmani@gamil.com</p>
+        </div>
+        <div class="footer-hours">
+          <h4>Clinic Hours</h4>
+          <p><strong>Mon-Sunday:</strong> 9:00 AM - 7:00 PM</p>
+          <p><strong>Friday:</strong> Closed</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Dr. Majid's Physiotherapy and Weight Loss Clinic. All Rights Reserved.</p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/guruhospitalsoporekashmir/" class="social-icon">
+            <img src="images/facebook.svg" alt="Facebook">
+          </a>
+          <a href="error.html" class="social-icon">
+            <img src="images/instagram.svg" alt="Instagram">
+          </a>
+          <a href="error.html" class="social-icon">
+            <img src="images/twitter.svg" alt="Twitter">
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/gallery.js"></script>
+</body>
+</html>
