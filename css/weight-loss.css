@@ -1,0 +1,244 @@
+/* Weight Loss Page Specific Styles */
+
+/* Weight Loss Banner */
+.weight-loss-banner {
+  background-image: linear-gradient(135deg, rgba(26, 115, 232, 0.9) 0%, rgba(66, 133, 244, 0.8) 100%), 
+    url('https://images.pexels.com/photos/6551155/pexels-photo-6551155.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Weight Loss Introduction */
+.intro-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-xl);
+  align-items: center;
+}
+
+.intro-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.intro-image {
+  flex: 1;
+  min-width: 300px;
+}
+
+/* Weight Loss Programs */
+.programs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-xl);
+}
+
+.program-card {
+  background-color: var(--white);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-normal);
+}
+
+.program-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+.program-icon {
+  width: 100%;
+  height: 200px;
+  margin-bottom: var(--spacing-md);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.program-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition-normal);
+}
+
+.program-card:hover .program-icon img {
+  transform: scale(1.05);
+}
+
+.program-card h3 {
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-sm);
+}
+
+.program-card p {
+  margin-bottom: var(--spacing-md);
+}
+
+.program-card ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.program-card ul li {
+  padding-left: 25px;
+  position: relative;
+  margin-bottom: var(--spacing-sm);
+}
+
+.program-card ul li::before {
+  content: "✓";
+  color: var(--secondary-color);
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+/* Success Stories */
+.stories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-xl);
+}
+
+.story-card {
+  background-color: var(--white);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-normal);
+}
+
+.story-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+.before-after {
+  display: flex;
+  height: 200px;
+}
+
+.before-after img {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition-normal);
+}
+
+.story-card:hover .before-after img {
+  transform: scale(1.05);
+}
+
+.story-content {
+  padding: var(--spacing-lg);
+}
+
+.story-content h3 {
+  margin-bottom: 0;
+}
+
+.story-content .stats {
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: var(--spacing-sm);
+}
+
+/* Weight Loss FAQs */
+.faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  background-color: var(--white);
+  border-radius: var(--radius-sm);
+  margin-bottom: var(--spacing-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.faq-question {
+  padding: var(--spacing-md);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: var(--transition-fast);
+}
+
+.faq-question:hover {
+  background-color: rgba(26, 115, 232, 0.05);
+}
+
+.faq-question h3 {
+  margin-bottom: 0;
+  font-size: 1.1rem;
+  flex: 1;
+}
+
+.faq-toggle {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  transition: var(--transition-fast);
+}
+
+.faq-answer {
+  padding: 0 var(--spacing-md);
+  max-height: 0;
+  overflow: hidden;
+  transition: var(--transition-normal);
+}
+
+.faq-item.active .faq-answer {
+  padding: 0 var(--spacing-md) var(--spacing-md);
+  max-height: 300px;
+}
+
+.faq-item.active .faq-toggle {
+  transform: rotate(45deg);
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .programs-grid,
+  .stories-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .intro-content {
+    flex-direction: column;
+  }
+  
+  .intro-image {
+    order: -1;
+    margin-bottom: var(--spacing-lg);
+  }
+  
+  .program-icon,
+  .before-after {
+    height: 180px;
+  }
+  
+  .faq-question h3 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .programs-grid,
+  .stories-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .program-card,
+  .story-content {
+    padding: var(--spacing-md);
+  }
+  
+  .program-icon,
+  .before-after {
+    height: 160px;
+  }
+}
